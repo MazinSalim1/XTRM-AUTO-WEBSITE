@@ -1,0 +1,50 @@
+
+	<?php
+	session_start();
+	include "Connection.php";
+	
+	if(array_key_exists("logout", $_GET)){
+		unset($_SESSION);
+		setcookie("id", "", time() - 60*60);
+		$_COOKIE["id"] = "";
+	}else if(array_key_exists("id", $_SESSION) OR array_key_exists("id", $_COOKIE)){
+		header("index.html");
+	}
+	
+	if(array_key_exists('email', $_POST) OR array_key_exists('password', $_POST)){
+		if(!$_POST['email']){
+			echo "Email address is required";
+		}else if(!$_POST['password']){
+			echo "Password is required";
+		}else{
+			
+			if($_POST['Createacc'] == '1'){
+			
+				$query="SELECT email_ID from user_info WHERE email_ID = '".mysqli_real_escape_string($link, $_POST['email'])."' LIMIT 1";
+				$result = mysqli_query($link, $query);
+				if(mysqli_num_rows($result)>0){
+					echo "The Email address has already been taken";
+				}else{
+					$user_email = mysqli_real_escape_string($link, $_POST['email']);
+					$password = mysqli_real_escape_string($link, $_POST['password']);
+					$username = mysqli_real_escape_string($link,$_POST['useername']);
+					$phn_no = mysqli_real_escape_string($link,$_POST['phone_number']);
+					$license = mysqli_real_escape_string($link,$_POST['license']);
+					$query = "INSERT INTO user_info (email_ID, user_pass, username, license_no, phn_no) VALUES ('$user_email', '$password', '$username','$phn_no','$license')";
+					$result = mysqli_query($link,$query);
+					
+					if(!mysqli_query($link,$query)){
+						echo "Could not sign you up";
+					}else{
+						mysqli_query($link,$query);
+						$_SESSION['id'] = mysqli_insert_id($link);
+						if($_POST['stayLoggedIn'] == '1'){
+							setcookie("id", mysqli_insert_id($link), time() + 60*60*24*365);
+						}
+						header ("location:SignInPage.php");
+					}
+				}
+			}
+		}
+	}
+?>

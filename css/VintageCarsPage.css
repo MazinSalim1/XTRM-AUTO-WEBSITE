@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'rustico_-_v2regular';
+    src: url('webfontkit-20201128-083655/rustico-v2-regular-webfont.woff2') format('woff2'),
+         url('webfontkit-20201128-083655/rustico-v2-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'webfontregular';
+    src: url('fonts/PunchLimit/punchlimit-webfont.woff2') format('woff2'),
+         url('fonts/PunchLimit/punchlimit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'atmosphere_script_typefaceRg';
+    src: url('../atmosphere/atmosphere-regular-webfont.woff2') format('woff2'),
+         url('../atmosphere/atmosphere-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+body {
+	background: url("../images/vintage/background.jpg") ;
+	font-family:'Oxygen', sans-serif;
+}
+
+.parallax1 {
+	background-image: url("../images/vintage/parallax1.jpg");
+  	min-height: 550px; 
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+.caption1 {
+	font-family: rustico_-_v2regular, sans-serif;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+	text-align: center;
+	position: absolute;
+	left: 30px;
+	top: 90px;
+
+}
+
+h1 {
+	font-size: 95px;
+}
+
+.quote1 {
+	font-family: rustico_-_v2regular, sans-serif;
+	font-size: 35px;
+	position: relative;
+	color: white;
+	text-shadow: 4px 4px 3px black;
+	left: -500px;
+	top: 230px;
+	text-align: center;
+}
+
+.container-fluid {
+	background-image: url("../images/vintage/background.jpg") ;
+	height: 100%;
+}
+
+.container1 {
+	height: 675px;
+	margin: 30px 0 30px 0;
+	padding: 0 20px 0 20px;
+}
+
+.row1 {
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.jumbotron {
+	position: relative;
+	background: url("../images/vintage/jumbotron.png") no-repeat;
+	padding:0;
+	margin: 0;
+}
+
+.jumbotron-text {
+	position: absolute;
+	bottom: -5px;
+	right: 20px;
+	font-family: rustico_-_v2regular, sans-serif;
+	font-size: 2.2em;
+	color: white;
+	filter: blur(1px);
+	opacity: .9;
+}
+.jumbotron-sidetext {
+	padding: 75px 15px 20px 15px;
+	width: 100%;
+	height: 100%;
+	font-family: 'Teko', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	background: black;
+	border-radius: 5px;
+	opacity: .7;
+}
+.jumbotron-sidetext h3 {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+#timer {
+	font-size: 2em;
+	margin-bottom: 25px;
+}
+
+.bttn {
+	width: 260px;
+	margin: 16px;
+	padding: 12px;
+	font-family: 'Teko', sans-serif;
+	font-size: 1.4em;
+	background-color: black;
+	color: white;
+	border: 2px solid #929599;
+	border-radius: 6px;
+	text-transform: uppercase;
+	transition: background-color .8s,color .6s;
+}
+.bttn:hover {
+	background-color: white;
+	text-decoration:none;
+	color: black;
+}
+i.far.fa-handshake, i.fas.fa-headphones {
+	font-size: 1.8em;
+	margin-bottom: 5px;
+}
+i.fas.fa-info-circle {
+	margin-right: 6px;
+	font-size: 1.1em;
+	color: #929599;
+}
+.info {
+	margin-top: 20px;
+}
+.info span {
+	text-transform: capitalize;
+	font-size: 1.1em;
+	color: #929599;
+}
+
+.parallax2 {
+	background-image: url("../images/vintage/parallax2.jpg");
+  	min-height: 600px; 
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+
+.quote2 {
+	font-family: 'webfontregular';
+	font-size: 4em;
+	position: relative;
+	color:#EE7D24;
+	text-shadow: 5px 5px 2px black;
+	width: 600px;
+	left:  450px;
+	top: 130px;
+	text-align: center;
+	
+}
+
+.row2 {
+	padding: 40px 15px 20px 15px;
+
+}
+
+.scene {
+	width: 480px;
+	height: 330px;
+	perspective: 600px;
+	margin: 10px 12px 10px 12px;
+}
+
+
+.card {
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+	border: 0;
+	position: relative;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	transform-origin: center right;
+}
+
+img {
+	filter: grayscale(100%);
+	transition: filter .45s;
+}
+img:hover{
+	filter: grayscale(0);
+	cursor: pointer;	
+}
+.card_face {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+}
+
+.card_face--front {
+	background-color: black;
+}
+.card_face--back {
+	color: white;
+	background-color: black;
+	border: 1px solid #929599;
+	transform: rotateY(180deg);
+	transition: box-shadow .2s;
+}
+.card_face--back:hover {
+	box-shadow: 1px 1px 5px #929599;
+	cursor: pointer;
+}
+
+.card.is-flipped {
+	transform: translateX(-100%) 
+	rotateY(-180deg);
+}
+
+.card_face span {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+	color:white;
+	font-family: 'Teko', sans-serif;
+	font-size: 1.8em;
+	opacity: 0;
+	text-align: center;
+	transition: opacity .45s ease;
+}
+
+.card_face:hover span {
+	opacity: .75;
+}
+
+.table {
+	margin: 0;	
+}
+
+.card_face--back td {
+	color: #929599;
+	font-size: 1.1em;
+	padding: .50rem;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-top: 0;
+	border-bottom: 1px solid #929599;
+}
+
+
+.card_face--back .table thead th {
+	padding: .75rem;
+	color:white;
+	border-top: 0;
+	border-bottom: 1px solid #929599;
+}
+
+.bid_btn {
+	padding:  5px 20px 5px 20px;
+	border:2px outset #929599;
+	border-radius: 17px;
+	background-color:transparent;
+	transition: color .6s, background-color .6s;
+	color: #929599;
+}
+.bid_btn:hover {
+	background-color: #929599; 
+	color: black;
+	border-color:#929599;
+	box-shadow:2px 5px 10px black;
+	background-image:linear-gradient(to bottom right, grey, silver) ;
+}
+
+.panel-footer {
+
+		padding-top: 8px;
+		padding-bottom: 8px;
+		background-color: rgb(0,0,0,0.7);
+		border-top:0;
+		color:#DEFFFF;
+		font-size: 1.2em;
+
+	}
+.sclMedia a{
+	
+		color:#DEFFFF;
+		
+	}
+	
+	.sclMedia a:hover{
+		
+		text-decoration:none;
+		
+	}
+	
+	#instaIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+
+	#twitterIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+		
+	#facebookIcon{
+		
+		width:20px;
+		height:20px;
+		position:relative;
+		top:-2px;
+		
+	}
+
+
+/***********MODAL*********************/				
+.modal-content {
+	height: 800px;
+	width: 800px;
+	background-color:transparent;
+}
+
+.modal-header {
+	padding: 10px 20px 0 30px;
+	background: url('../images/XTRM LOGO.png') no-repeat;
+
+}
+.modal-title {
+	font-family: 'Teko', sans-serif;
+	font-size: 2.5em;
+	margin-bottom: 0px ;
+}
+.modal-body {
+	position: relative;
+	padding-left: 30px;
+}
+
+.modal-body img {
+	position: absolute;
+	left: 0;
+	bottom: -95px;
+	filter: grayscale(0);
+}
+
+.modal-body span {
+	margin-bottom: 20px;
+}
+
+.modal-body a {
+	color:#929599;
+	margin-top: 5px;
+
+}
+.modal-body a:hover {
+	text-decoration: none;
+	color: black;
+}.profile-page{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:90vh;
+  margin-top:10rem;
+  margin-bottom:9rem;
+}
+.wrapper{
+  max-width:500px;
+  width:100%;
+  box-shadow:0 0 5px rgba(0,0,0,.10);
+  margin:auto;
+  background-color:white;
+  border-radius:5px;
+  min-height:650px;
+  padding:2rem;
+}
+.wrapper h2{
+  text-align:center;  
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+.wrapper .inputbox{
+  width:100%;
+  height:50px;
+  margin-bottom:2.5rem;
+  position:relative;
+  margin-top:.4rem;
+}
+.wrapper .inputbox input{
+  width:100%;
+  height:100%;
+  border:1px solid #C5C6D0;
+  outline:none;
+  border-radius:5px;
+  padding:1rem;
+}
+.wrapper form{
+  padding:0;  
+}
+.wrapper button{
+  text-transform:capitalize;
+  padding:.7rem 2rem;
+  margin-top:2rem;
+  display:block;
+  width:100%;
+  font-family:'montserrat';
+}
+#userImg{
+  margin-bottom:1.3rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#photobox{
+  height:65px;
+}
+.userCircle{
+  background-color:lightgrey;
+  width:130px !important;
+  height:130px !important;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:65px;
+  border:1px solid grey;
+  position:relative;
+  left:152px;
+}
+.userCircle i:after{
+  display:none;
+}
+#userImg{
+  max-width:130px;
+  max-height:130px;
+  background-color:none;
+  height:130px;
+  width:130px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:65px;
+  position:relative;
+  top:10.5px;
+  
+}
+#body{
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/Homepage/G63.jpg);
+}
+#profilebtn{
+    color:black;
+    border:1px solid black;
+    padding:15px;
+    border-radius:25px;
+    margin-right:2rem;
+}
+#profilebtn:hover{
+    text-decoration:none;
+    }
+#profilebtn:focus{
+    outline:none;
+}
+#profilebtn:focus{
+    box-shadow:0 2px 5px grey;
+    transform: translateY(4px);
+    transition:0.2s;
+}

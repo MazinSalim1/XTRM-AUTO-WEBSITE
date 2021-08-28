@@ -1,0 +1,304 @@
+		<style>	
+			
+			body{
+
+				font-size:17px !important;
+				background-color:#F7F7F7;
+			
+			}
+			
+			.bold{
+				
+				font-weight:bold;
+				
+			}
+			
+			#logoLink{
+				
+				margin-left:-12px;
+				margin-right:12px;
+				margin-top:1px;
+				
+			}
+			
+			.navbar{
+				
+				margin-top:-20px;
+				background-color:transparent;
+				position:absolute;
+				
+			}
+			
+			#navbarSupportedContent{
+				
+				position:relative;
+				padding-left:250px;
+				text-align:center;
+				
+			}
+			
+			.nav-link{
+				
+				color:black;
+				font-family:'Montserrat', sans-serif;
+				font-size:18px;
+				
+			}
+			
+			.nav-link:hover{
+				
+				color:black;
+				
+			}
+			
+			.nav-item{
+				
+				margin-bottom:5px;
+				padding-right:50px;
+				
+			}
+			
+			.borderHover:hover{
+				
+				border-bottom:3px solid black;
+				transition:0.5s;
+				
+			}
+			
+			.container{
+				
+				text-align:center;
+				width:600px;
+				padding:10px 5px;
+				margin-left:140px;
+				
+			}
+			
+			.dropdown-menu{
+			
+				background-color:#F7F7F7;
+				border:1px solid #d3d3d3;
+				display:none;
+				
+			}
+			
+			.dropdown-item:hover{
+				
+				background-color:#d3d3d3;
+				
+			}
+			
+			.dropdown-divider{
+				
+				border-bottom:1px solid lightgrey;
+				
+			}
+			
+			#rentalDropdownMenu{
+				
+				display:none;
+				
+			}
+			
+			#logoImg{
+				
+				margin-left:-10px;
+				width: 150px;
+				height: 100px;
+				padding-bottom:4px;
+
+			}
+			
+			.button{
+				
+				width:auto;
+				border:2px outset black;
+				border-radius:30px;
+				padding:10px 7px;
+				background-color:transparent !important;
+				transition:0.4s;
+				
+			}
+			
+			.button:hover{
+				
+				border-color:lightgrey;
+				transition:0.4s;
+				color:white;
+				font-size:14px;
+				box-shadow:2px 5px 5px grey;
+				background-image:linear-gradient(to bottom right, dodgerblue, dodgerblue) ;
+				
+			}
+			
+			.button:active{
+				
+				box-shadow:0 2px 5px grey;
+				transform: translateY(4px);
+				transition:0.2s;
+				
+			}
+			
+			.button:focus{
+				
+				outline:none;
+				
+			}
+			
+			#logoutBtn{
+				color:black;
+				border:1px solid black;
+				padding:10px;
+				padding-right:12px;
+				padding-left:12px;
+				border-radius:25px;
+			}
+			
+			#logoutBtn:hover{
+				text-decoration:none;
+			}
+			
+			#logoutBtn:focus{
+				outline:none;
+			}
+			
+			#logoutBtn:focus{
+				box-shadow:0 2px 5px grey;
+				transform: translateY(4px);
+				transition:0.2s;
+			}
+			#profilebtn{
+    color:black;
+    border:1px solid black;
+    padding:10px;
+	padding-left:13px;
+	padding-right:13px;
+    border-radius:25px;
+    margin-right:2rem;
+}
+#profilebtn:hover{
+    text-decoration:none;
+    }
+#profilebtn:focus{
+    outline:none;
+}
+#profilebtn:focus{
+    box-shadow:0 2px 5px grey;
+    transform: translateY(4px);
+    transition:0.2s;
+}
+			
+
+			
+			.separatingBorder{
+		
+				margin-top:30px;
+				border-bottom:1px solid black;
+		
+			}
+			
+	.panel-footer {
+
+		padding-top: ;
+		padding-bottom:15px;
+		background-color:#343A40;
+		border-top:0;
+		color:#DEFFFF;
+
+	}
+
+	#hours, #address {
+		
+		padding-left: 30px;
+		padding-right: 30px;
+
+	}
+
+	#address p {
+	
+		color: lightgrey;	
+		font-size: 13px;
+		
+	}
+
+	#testimonials {
+
+		font-style: italic;	
+		padding-left: 30px;
+		padding-right: 30px;
+	
+	}
+	
+	.sclMedia a{
+	
+		color:#DEFFFF;
+		
+	}
+	
+	.sclMedia a:hover{
+		
+		text-decoration:none;
+		
+	}
+	
+	#instaIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+
+	#twitterIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+		
+	#facebookIcon{
+		
+		width:20px;
+		height:20px;
+		position:relative;
+		top:-2px;
+		
+	}
+	
+	#goTopBtn{
+		
+		position:fixed;
+		bottom:15px;
+		background-color:white;
+		width:125px !important;
+		margin-left:25px;
+		
+	}
+	
+	#goTopBtn:hover{
+		
+		background-image:dodgerblue;
+		color:white;
+		box-shadow:2px 2px 5px grey;
+		
+	}
+	
+	.arrowMarkImg{
+		
+		margin-left:5px;
+		height:20px;
+		width:20px;
+		
+	}
+	
+	button:focus{
+		
+		outline:none;
+		
+	}
+	
+	
+<style>

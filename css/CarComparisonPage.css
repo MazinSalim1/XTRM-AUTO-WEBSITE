@@ -1,0 +1,551 @@
+@font-face {
+    font-family: 'webfontregular';
+    src: url('fonts/PunchLimit/punchlimit-webfont.woff2') format('woff2'),
+         url('fonts/PunchLimit/punchlimit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'atmosphere_script_typefaceRg';
+    src: url('../atmosphere/atmosphere-regular-webfont.woff2') format('woff2'),
+         url('../atmospher/atmosphere-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+body{
+	
+	background-color:#F7F7F7;
+	height: 1200px;
+	
+}
+
+#goTopBtn{
+	
+	background-color:white;
+	
+}
+
+#jumbotron_1{
+	
+	background-image:url("../images/CarComparison/5.jpg");
+	text-align:center;
+	margin-top:80px;
+	height:300px;
+	border-radius:0px;
+	
+}
+
+#jumbotron_1 h1{
+	
+	font-family:'webfontregular' !important;
+	font-size:70px !important;
+	padding:15px;
+	border-radius:10px;
+	position:relative;
+	top:50px;
+	box-shadow: 1px 1px 15px white;
+	color:#d3d3d3;
+	
+}
+
+#jumbotron_2{
+	
+	background-image: linear-gradient(to bottom right, grey, lightgrey, silver);
+	
+}
+
+#goTopBtn{
+	
+	position:fixed;
+	bottom:15px;
+	left:;
+	width:100px;
+	z-index:1;
+	
+}	
+
+.button{
+
+	width:auto;
+	border:2px outset black;
+	border-radius:17px;
+	padding:10px 7px ;
+	background-color:transparent;
+	transition:0.4s;
+	box-shadow: 2px 5px 8px grey;
+
+}
+
+.button:hover{
+	
+	border-color:lightgrey;
+	background-color:transparent;
+	transition:0.7s;
+	font-size:17px;		
+	box-shadow:2px 5px 10px black;
+	background-image:linear-gradient(to bottom right, grey, silver);
+	
+}
+
+.button:active{
+	
+	box-shadow:0 2px 5px grey;
+	transform: translateY(4px);
+	transition:0.2s;
+	
+}
+
+#sgnInBtn{
+	
+	margin-top:-2px;
+	width:110px;			
+
+}
+
+#sgnInBtn:hover{
+
+
+}
+
+.arrowMarkImg{
+
+	margin-left:5px;
+	height:20px;
+	width:20px;
+
+}
+
+li{
+	
+	list-style-type:none;
+	
+}
+
+.dropdown:focus{
+	
+	outline:none;
+	
+}
+
+#compareDropdown p{
+	
+	position:absolute;
+	border-bottom:1px solid grey;
+	left:200px;
+	float:left;
+	margin:20px;
+	font-style:'Montserrat', sans-serif;
+
+}
+
+.separatingBorder{
+	
+	border-bottom:1px solid lightgrey;
+	width:75%;
+	margin-left:35px;
+	margin-top:0px !important;
+	
+}
+
+#carDropdownBtn{
+	
+	margin-left:100px;
+	position:relative;
+	float:left;
+	
+}
+
+#carDropdown{
+	
+	background-color:dodgerblue;
+	border:none;
+	margin-left:20px;
+	color:black;
+	border-radius:5px;
+	margin-bottom:10px;
+	box-shadow:2px 2px 5px grey; 
+	
+}
+
+#carDropdown:hover{
+	
+	background-image:none;
+	box-shadow:none;
+	
+}
+
+#carDropdownMenu{
+	
+	background-color:dodgerblue;
+	margin-left:161px;
+	width:300px;
+	text-align:center;
+	padding:0px;
+	
+}
+
+.dropdown-item{
+	
+	padding-bottom:10px;
+	padding-top:10px;
+	color:black;
+	
+}
+
+#carDropdownMenu a:hover{
+	
+	background-color:#1560BD;
+	
+}
+
+#compareCarDropdownBtn{
+	
+	position:relative;
+	float:right;
+	margin-right:130px;
+	
+}
+
+#compareCarDropdownBtn span{
+	
+	margin-left:110px !important;
+	
+}
+
+#compareCarDropdown{
+	
+	background-color:dodgerblue;
+	border:none;
+	margin-left:20px;
+	color:black;
+	border-radius:5px;
+	margin-bottom:10px;
+	box-shadow:2px 2px 5px grey;
+	
+}
+
+#compareCarDropdown:hover{
+	
+	background-image:none;
+	box-shadow:none;
+	
+}
+
+#compareCarDropdownMenu{
+
+	background-color:dodgerblue;
+	margin-left:159px;
+	width:300px;
+	text-align:center;
+	padding:0px;
+	
+}
+
+#compareCarDropdownMenu a:hover{
+	
+	background-color:#1560BD;
+	
+}
+	
+#sepBdr{
+	
+	text-align:center;
+	
+}
+	
+.verticalBorder{
+	
+	border-left:1px solid black;
+	height:1500px;
+	margin-top:30px;
+	margin-bottom:30px;
+	position:absolute;
+	left:50%;
+	
+}	
+
+.compareContainer{
+	
+	background-color:white;
+	height:500px;
+	position:relative;
+	float:left;
+	margin-top:46px;
+	left:-110px;
+	border-radius:5px;
+	width:700px;
+	
+}
+
+#compareCntrBrdr{
+	
+	border-left:3px solid black;
+	height:490px;
+	bottom:5px;
+	position:absolute;
+	left:65%;
+	
+}
+
+.card{
+	
+	
+}
+
+.card img{
+	
+	height:350px;
+	
+}
+
+#card_1{
+	
+	display:none;
+	height:1420px !important;
+	
+}
+
+#card_2{
+	
+	display:none;
+	height:1420px !important;
+	
+}
+
+#card_3{
+	
+	display:none;
+	height:1420px !important;
+	
+}
+
+#card_4{
+	
+	display:none;
+	height:1420px !important;
+	
+}
+
+#card_5{
+	
+	display:none;
+	height:1420px !important;
+	
+}
+
+#card_6{
+	
+	display:none;
+	height:1420px !important;
+	
+}
+
+#card_7{
+	
+	display:none;
+	height:1420px !important;
+	
+}
+
+#card_8{
+	
+	display:none;
+	height:1420px !important;
+	
+}
+
+#compareCard_1{
+	
+	display:none;
+	position:relative;
+	float:right;
+	padding-left:50px;
+	height:1420px !important;
+	
+}
+
+#compareCard_2{
+	
+	display:none;
+	position:relative;
+	float:right;	
+	padding-left:50px;
+	height:1420px !important;
+
+}
+
+#compareCard_3{
+	
+	display:none;
+	position:relative;
+	float:right;
+	padding-left:50px;
+	height:1420px !important;
+	
+}
+
+#compareCard_4{
+	
+	display:none;
+	position:relative;
+	float:right;
+	padding-left:50px;
+	height:1420px !important;
+	
+}
+
+#compareCard_5{
+	
+	display:none;
+	position:relative;
+	float:right;
+	padding-left:50px;
+	height:1420px !important;
+	
+}
+
+#compareCard_5 img{
+	
+	width:554px;
+	
+}
+
+#compareCard_6{
+	
+	display:none;
+	position:relative;
+	float:right;
+	padding-left:50px;
+	height:1420px !important;
+	
+}
+
+#compareCard_7{
+	
+	display:none;
+	position:relative;
+	float:right;
+	padding-left:50px;
+	height:1420px !important;
+	
+}
+
+#compareCard_8{
+	
+	display:none;
+	position:relative;
+	float:right;
+	text-align:left;
+	padding-left:50px;
+	height:1420px !important;
+	
+}
+
+#mainCardContainer{
+	
+	position:relative;
+	float:left;
+	height:1430px;
+	left:-50px;
+	float:left;
+	
+}
+
+#mainCompareCardContainer{
+	
+	position:relative;
+	float:right;
+	height:1430px;
+	right:80px;
+	width:620px;
+	float:right;
+
+}
+
+#mainCardContainer img{
+	
+	width:555px;
+	
+}
+
+#mainCompareCardContainer img{
+	
+	width:555px;
+	
+}
+
+#mainCardContainer td{
+	
+	width:30px !important;
+	position:relative;
+	right:-30px;
+	
+}
+
+#mainCardContainer tr{
+	
+	margin-left:-5px;
+	margin-right:40px !important;
+	
+}
+
+#mainCompareCardContainer td{
+	
+	width:30px !important;
+	position:relative;
+	right:-30px;
+	
+}
+
+#mainCompareCardContainer{
+	
+	margin-left:-5px;
+	margin-right:40px !important;
+	
+}
+
+.panel-footer{
+	
+	position:relative !important;
+	bottom:-1500px !important;
+	width:100%;
+	
+}
+
+
+/********************************/
+
+.compareCardHeader{
+	
+	color:black;
+	
+}
+
+.value-spec{
+	
+	padding-right:50px !important;
+	text-align:center;
+	
+}
+
+table, tr, td{
+	
+	color:grey;
+	padding-top:15px;
+	padding-bottom:15px;
+	border-bottom:1px solid lightgrey;
+	
+}
+
+
+/********************************/
+
+

@@ -1,0 +1,111 @@
+<?php
+	session_start();
+	include "Connection.php";
+	
+	if(array_key_exists("logout", $_GET)){
+		unset($_SESSION);
+		setcookie("id", "", time() - 60*60);
+		$_COOKIE["id"] = "";
+	}else if(array_key_exists("id", $_SESSION) OR array_key_exists("id", $_COOKIE)){
+		header("index.html");
+	}
+	
+	if(array_key_exists('email', $_POST) OR array_key_exists('password', $_POST)){
+		if(!$_POST['email']){
+			echo "Email address is required";
+		}else if(!$_POST['password']){
+			echo "Password is required";
+		}else{
+			
+			if($_POST['Createacc'] == '1'){
+			
+				$query="SELECT email_ID from user_info WHERE email_ID = '".mysqli_real_escape_string($link, $_POST['email'])."' LIMIT 1";
+				$result = mysqli_query($link, $query);
+				if(mysqli_num_rows($result)>0){
+					echo "The Email address has already been taken";
+				}else{
+					$user_email = mysqli_real_escape_string($link, $_POST['email']);
+					$password = mysqli_real_escape_string($link, $_POST['password']);
+					$query = "INSERT INTO user_info (email_ID, user_pass) VALUES ('$user_email', '$password')";
+					
+					if(!mysqli_query($link,$query)){
+						echo "Could not sign you up";
+					}else{
+						$query = "UPDATE user_info SET user_pass = '".md5(md5(mysqli_insert_id($link)).$_POST['password'])."'WHERE id = ".mysqli_insert_id($link)." LIMIT 1";
+						mysqli_query($link,$query);
+						$_SESSION['id'] = mysqli_insert_id($link);
+						if($_POST['stayLoggedIn'] == '1'){
+							setcookie("id", mysqli_insert_id($link), time() + 60*60*24*365);
+						}
+						header ("location:loggedinpage.php");
+					}
+				}
+			}else{
+				$query = "SELECT * FROM user_info WHERE email_ID = '".mysqli_real_escape_string($link,$_POST['email'])."'";
+				$result = mysqli_query($link,$query);
+				$row = mysqli_fetch_array($result);
+				
+				if(array_key_exists("id", $row)){
+					$_SESSION['id'] = $row['id'];
+					if($_POST['stayLoggedIn'] == '1'){
+						setcookie("id", $row['id'], time() + 60*60*24*365);
+					}
+					header ("location:loggedinpage.php");
+				}else if(!array_key_exists("id", $row)){
+					echo "The Email/Password combination could not be found.";
+				}
+			}
+		}
+	}
+
+?>
+
+<form method="post">
+
+	<input type="text" name="email" placeholder="Email Address" value=""><br><br>
+	<input type="password" name="password" placeholder="Password" value=""><br><br>
+	<input type="checkbox" name="stayLoggedIn" value="1">Stay logged in?<br>
+	<input type="hidden" name="Createacc" value="1">
+	<input type="submit" value="Create Account">
+
+</form>
+<br>
+<hr>
+<br>
+<form method="post">
+
+	<input type="text" name="email" placeholder="Email Address" value=""><br><br>
+	<input type="password" name="password" placeholder="Password" value=""><br><br>
+	<input type="checkbox" name="stayLoggedIn" value="1">Stay logged in?<br>
+	<input type="hidden" name="Createacc" value="0">
+	<input type="submit" value="Log in">
+
+</form>
+
+<?php
+	session_start();
+	$_SESSION = 
+	include "Connection.php";
+	
+	if(isset($_POST['email'])){
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		
+		$query = "SELECT * FROM user_info WHERE email_ID = '".$email."' AND user_pass = '".$password."'LIMIT 1";
+		$result = mysqli_query($link,$query);
+		if(mysqli_num_rows($result) == 1){
+			echo '<script>';
+			echo 'alert("Successfully logged in!")';
+			echo '<script>';
+			header("location:index.html");
+		}else{
+			echo '<script>';
+			echo 'alert("Login Unsuccessfull!!  Invalid Username or password")';
+			echo '</script>';
+			
+			echo '<script>';
+			echo 'window.location.href="SignInPage.php"';
+			echo '</script>';
+		}
+	}
+	

@@ -1,0 +1,238 @@
+body {
+	font-family:'Oxygen', sans-serif;
+	repeat:no-repeat;
+	background-color:white;	
+	font-size:17px;
+	background-image:url("../images/CarComparison/1.jpg");
+}
+
+.jumbotron{
+	background-image:none;
+}
+
+.bold {		
+	font-weight:bold;			
+}
+			
+/***********NAV BAR**********************/			
+
+#goTopBtn{
+	background-color:white !important;
+}
+
+#logoimg{
+	margin-top:10px;	
+}
+
+.button{	
+	border:2px outset black;
+	border-radius:17px;
+	padding:10px;	
+	font-weight:bold;	
+}
+
+.dropdown-item{
+	
+	font-family:'Montserrat', sans-serif;
+	
+}
+
+#navbarSupportedContent{
+	position:relative;
+	padding-left:230px !important;
+	text-align:center;
+	font-weight:bold;
+}
+
+.navbar{
+	background-color:white;
+	
+}
+
+.nav-link{
+	color:black;
+	font-family:'Montserrat', sans-serif;
+	font-size:20px !important;	
+}
+
+.nav-link:hover{
+	color:black;	
+}
+
+
+.nav-item{
+	padding-right:50px;	
+	margin-bottom:-10px;
+}
+
+.borderHover:hover{	
+	border-bottom:3px solid black;
+	transition:0.5s;
+}
+
+#main-content h1{
+	position:;
+	margin: 100px 10px 25px 42px;
+	font-family:'Oxygen', sans-serif;
+	font-size: 3.5em;
+}  
+
+.card-columns {
+	margin: 0px 20px 20px 20px;
+}
+
+.card {
+	color: #000;
+	border-radius: .75rem;
+}
+
+a.bg-light:hover, a.bg-light:active, a.bg-light:focus {
+	background-color: #f8f9fa!important;
+}
+
+.card img {
+    width: 100%;
+	height:300px;
+    background-repeat: no-repeat;
+   	border-radius: .75em;
+}   
+
+#main-content{
+	position:relative;
+	top:200px;
+	left:70px;
+	height:490px;
+	background-color:white;
+	width:90%;
+}
+
+#main-content img{
+	width:500px;
+	height:350px;
+}
+
+#main-content button{
+	position:relative;
+	float:right;
+	top:-72px;
+	right:-240px;
+	width:350px;
+}
+
+table{
+	font-family:'montserrat', sans-serif;
+	border-collapse:collapse;
+	position:relative;	
+	float:left;
+	left:560px;
+	top:-390px;
+}
+
+td,th{
+	border:1px outset #dddddd;
+	text-align:center;
+	padding:8px;
+}
+
+th{
+	font-weight:bold;
+}
+
+tr:nth-child(even){
+	background-color:#dddddd;
+}
+
+tr:nth-child(odd){
+	background-color:white;
+}
+
+**********SLIDESHOW***************
+
+{box-sizing:border-box}
+
+.slideshow-container {
+  width: 300px !important;
+  position: relative;
+  float:right;
+  margin:10px;
+  right:125px;
+  top:-270px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+*********SLIDESHOW ENDS*************
+#maincontent{
+	
+}

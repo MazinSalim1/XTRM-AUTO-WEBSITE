@@ -1,0 +1,788 @@
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<script src="https://kit.fontawesome.com/160f8a0fd9.js" crossorigin="anonymous"></script>
+		
+
+
+@font-face {
+    font-family: 'scare_armsregular';
+    src: url('webfontkit-20201203-031508/scarearms-lxj4-webfont.woff2') format('woff2'),
+         url('webfontkit-20201203-031508/scarearms-lxj4-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}	
+
+
+@font-face {
+    font-family: 'world_conflictregular';
+    src: url('fonts/worldconflict/worldconflictregular-p26r-webfont.woff2') format('woff2'),
+         url('fonts/worldconflict/worldconflictregular-p26r-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'webfontregular';
+    src: url('fonts/PunchLimit/punchlimit-webfont.woff2') format('woff2'),
+         url('fonts/PunchLimit/punchlimit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'the_talkshowregular';
+    src: url('fonts/TheTalkShow/thetalkshow-dafont-webfont.woff2') format('woff2'),
+         url('fonts/TheTalkShow/thetalkshow-dafont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hotsweatregular';
+    src: url('fonts/HotSweat/hotsweat-webfont.woff2') format('woff2'),
+         url('fonts/HotSweat/hotsweat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'devil_tail_-_personal_useRg';
+    src: url('fonts/DevilTail/devil_tail-webfont.woff2') format('woff2'),
+         url('fonts/DevilTail/devil_tail-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+<style>
+
+
+
+	html{
+		
+		scroll-behavior:smooth;	
+		
+	}
+	
+	body{
+		
+		scroll-behavior:smooth;
+		
+	}
+	
+	.borderHover:hover{
+		
+		border-bottom:3px solid black;
+		transition:0.5s;
+		
+	}
+	
+	.container{
+		
+		text-align:center;
+		width:600px;
+		padding:10px 5px;
+		margin-left:140px;
+		
+	}	
+	
+	.dropdown-menu{
+		
+		background-color:#F7F7F7;
+		border:none;
+		display:none;
+		
+	}	
+	
+	.dropdown-item:hover{
+		
+		background-color:;
+		
+	}
+	
+	.dropdown-divider{
+		
+		border-bottom:1px solid lightgrey;
+		
+	}
+	
+	#rentalDropdownMenu{
+		
+		display:none;
+		
+	}
+	
+	#logoImg{
+		
+		margin-left:-10px;
+		width: 150px;
+		height: 100px;
+		padding-bottom:4px;
+
+	}
+	
+	#jumbotron_1{
+		
+		background-image:url("../images/HomePage/porsche_resize.jpg");
+		height:910px;
+		background-size:cover;
+		margin-bottom:0px;
+		margin-top:-150px;
+		text-align:center;
+		border-radius:0px;
+		padding:0px;
+		margin-right:0px;
+		
+	}
+
+	#formLogoText h1 {
+		font-family: 'world_conflictregular';
+		position: absolute;
+		top: 130px;
+		left: 115px;
+		font-size: 140px;
+		opacity: .9;
+		text-shadow:0px 0px 20px lightgrey;
+		
+	}
+	
+	#parallaxJumbo_1{
+		
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/ParallaxJumbotrons/gtr34_1.jpg");
+		padding-top:150px;
+		padding-bottom:150px;
+		height:auto;
+		background-size:cover;
+		text-align:center;
+		color:#d3d3d3;
+		font-size:60px;
+		font-family:'the_talkshowregular';
+		margin-bottom:0px;
+		margin-topo:0px;
+		
+	}
+	
+	
+	#parallaxJumbo_1 p{
+		
+		color:#d3d3d3;
+		padding-bottom:3px;
+		text-shadow:0px 0px 20px #D30043; 
+		letter-spacing:7px;
+
+	}
+	
+	#jumbotron_2{
+		
+		height:1000px;
+		background-size:cover;
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/HomePage/wheelbackground.jpg");
+		margin-bottom:-20px;
+		margin-top:0px;
+		
+	}
+	
+	#txtCntr_1{
+		
+		color:#d3d3d3;
+		position:relative;
+		text-align:left;
+		float:left;
+		
+	}
+	
+	#txtCntr_2{
+		
+		color:#d3d3d3;
+		position:relative;
+		text-align:left;
+		float:left;
+		
+	}
+	
+	#txtCntr_3{
+		
+		color:#d3d3d3;
+		position:relative;
+		text-align:left;
+		float:left;
+		
+	}
+	
+	#txtCntr_4{
+		
+		color:#d3d3d3;
+		position:relative;
+		text-align:left;
+		float:left;
+		
+	}
+	
+	.swiper-container {
+		
+      	width: 100%;
+		height:410px;
+      	padding-top: 20px;
+     	padding-bottom: 20px;
+		background-color:transparent;
+		position:relative;
+		top:-400px;
+		margin-bottom:0px;
+		margin-top:0px;
+		
+    }
+
+    .swiper-slide {
+		
+		width:550px !important;
+		height:300px !important;
+		background-color:#fff;
+    }
+	
+	.swiper-slide img{
+		
+		height:300px !important;
+		width:550px !important;
+		background-size:cover;
+		position:relative;
+		
+	}
+	
+	#ftrCntr{
+		
+		width:700px;
+		text-align:center;
+		padding:15px;
+		height:400px;
+		background-color:transparent;
+		position:absolute;
+		right:0px;
+		
+	}
+	
+	#ftrVertBrdr{
+		
+		height:400px;
+		position:absolute;
+		left:50%;
+		top:0px;
+		float:left;
+	
+	}
+	
+	#ftrHrztBrdr{
+		
+		height:600px;
+		position:relative;
+		margin-top:220px;
+		transform:rotate(90deg);
+		border-left:1px solid white;
+		
+	}
+	
+	.swipeModel{
+		
+
+	}
+	
+	#tpLftSpn{
+		
+		float:left;
+		color:#d3d3d3;
+		margin-left:80px;
+		margin-top:30px;
+		
+	}
+	
+	#tpLftSpn h3{
+		
+		font-size:18px;
+		
+	}
+	
+	#tpRghtSpn{
+		
+		float:right;
+		
+	}
+	
+	#tpRghtSpn h3{
+		
+		font-size:18px;
+		margin-left:60px;
+		color:#d3d3d3;
+		
+	}
+	
+	#tpRghtSpn img{
+		
+		width:120px;
+		height:120px;
+		position:relative;
+		margin-left:100px;
+		margin-top:-8px;
+		
+	}
+	
+	#btLftSpn{
+		
+		position:relative;
+		float:left;
+		margin-left:115px;
+		top:;		
+		
+	}
+	
+	#btLftSpn h3{
+		
+		position:relative;
+		top:-600px;
+		font-size:18px;
+		color:#d3d3d3;
+		margin-left:-15px;
+		
+	}
+	
+	#btLftSpn img{
+		
+		width:120px;
+		height:120px;
+		position:relative;
+		float:left;
+		top:-600px;
+		
+	}
+	
+	#btRghtSpn img{
+		
+		width:120px;
+		height:120px;
+		position:relative;
+		float:right;
+		margin-right:100px;
+		margin-top:-75px;
+		
+	}
+	
+	#btRghtSpn h3{
+		
+		color:#d3d3d3;
+		posiition:absolute;
+		float:right;
+		margin-right:-130px;
+		margin-top:40px;
+		font-size:18px;
+		
+	}
+	
+	video{
+		
+		width:1500px;
+		height:600px;
+		position:relative;
+		float:left;
+		
+	}
+	
+	video:focus{
+		
+		outline:none;
+		
+	}
+	
+	#jumbotron_3{
+	
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+		background-size:cover;
+		background-color:#000;
+		height:700px;
+		margin-top:-400px;
+		margin-bottom:0px;
+		text-align:center !important;
+		border-radius:0px;
+		position:relative;
+		z-index:0;
+		
+	}
+	
+	#jumbotron_3 h1{
+		
+		position:absolute;
+		z-index:1;
+		left:35%;
+		top:3px;
+		color:#d3d3d3;
+		
+	}
+	
+	#jumbotron_3 h3{
+		
+		color:#FFF;
+		display:none;
+	}
+	
+	.parallax {
+  
+		background-image: url("img_parallax.jpg");
+		height: 400px; 
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+	
+	#jumbotron_4{
+		
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url("../images/ParallaxJumbotrons/appDownload_resize.jpg");
+		background-size:cover;
+		margin-right:0px;
+		margin-bottom:0px;
+		height:300px;
+		
+	}
+	
+	#jumbotron_4 h3{
+		
+		color:white;
+		
+	}
+	
+	#jumbotron_4 img{
+		
+		width:200px;
+		height:65px;
+		position:relative;
+		float:right;
+		margin-right:0px;
+		
+	}
+	
+	#jumbotron_4 img:hover{
+	
+		width:205px;
+		height:68px;
+		transition:0.6s;
+		
+	}
+	
+	#appstoreicon{
+		
+		height:77px !important;
+		margin-left:20px;
+		margin-top:-6px !important;
+		
+	}
+	
+	#appstoreicon:hover{
+		
+		width:205px;
+		height:80px !important;
+		transition:0.6s;
+
+	}
+	
+	#formLogo{
+
+		height:500px;
+		position:relative;
+		left:-400px;
+		top:200px;
+	
+	}
+
+	.jumbotron img{
+		
+		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
+		
+	}		
+	
+	.button{
+		
+		width:auto;
+		border:2px outset black;
+		border-radius:17px;
+		padding:10px 7px ;
+		background-color:transparent;
+		transition:0.4s;
+		
+	}
+		
+	.button:hover{
+		
+		background-color:transparent;
+		transition:0.4s;
+		font-size:17px;
+		box-shadow:2px 5px 10px black;
+		
+	}
+		
+	.button:active{
+		
+		box-shadow:0 2px 5px grey;
+		transform: translateY(4px);
+		transition:0.2s;
+		
+	}
+	
+	#sgnInBtn{
+		
+		margin-top:-2px;
+		width:110px;
+		border-color:black;
+		
+	}
+
+	#sgnInBtn:hover{
+		
+		border-color:lightgrey;
+	
+	}
+		
+	.arrowMarkImg{
+		
+		margin-left:5px;
+		height:20px;
+		width:20px;
+		
+	}
+		
+	#buyMoreBtnCntr{
+		
+		text-align:center ;
+		background-color:transparent;
+		padding:20px;
+		width:400px;
+		height:100px;
+		position:relative;
+		margin-top:500px;
+		
+	}
+	
+	#goTopBtn{
+		
+		position:fixed;
+		bottom:15px;
+		background-color:white;
+		width:125px;
+		margin-left:25px;
+		
+	}
+	
+	#goTopBtn:hover{
+		
+		background-image:linear-gradient(to bottom right, grey, lightgrey);
+		
+	}
+	
+	.arrowMarkImgRotate{
+		
+		transform: rotate(90deg);
+		
+	}
+
+	.panel-footer {
+
+		padding-top: ;
+		padding-bottom:15px;
+		background-color:#343A40;
+		border-top:0;
+		color:#DEFFFF;
+
+	}
+
+	#hours, #address {
+		
+		padding-left: 30px;
+		padding-right: 30px;
+
+	}
+
+	#address p {
+	
+		color: lightgrey;	
+		font-size: 13px;
+		
+	}
+
+	#testimonials {
+
+		font-style: italic;	
+		padding-left: 30px;
+		padding-right: 30px;
+	
+	}
+	
+	.sclMedia a{
+	
+		color:#DEFFFF;
+		
+	}
+	
+	.sclMedia a:hover{
+		
+		text-decoration:none;
+		
+	}
+	
+	#instaIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+
+	#twitterIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+		
+	#facebookIcon{
+		
+		width:20px;
+		height:20px;
+		position:relative;
+		top:-2px;
+		
+	}
+		
+	.box {
+		
+		transform: translate(-50%, -50%);
+		text-align:center;
+		
+	}
+	
+	.box span{
+		
+		display:block;
+		width:20px;
+		height:20px;
+		border-bottom:2px solid white;
+		border-right:2px solid white;
+		transform:rotate(45deg);
+		animation: animate 2s infinite;
+		margin-left:70px;
+		margin-top:-10px;	
+		
+	}
+		
+	.box span:nth-child(1){
+		
+		animation-delay:0.5s;
+		
+	}
+	
+	.box span:nth-child(2){
+		
+		animation-delay:0.3s;
+		
+	}
+		
+	.box span:nth-child(3){
+		
+		animation-delay:0.1s;
+		
+	}
+	
+	@keyframes animate{
+
+		0%{
+			
+			opacity:0;
+			transform:rotate(45deg) translate(-20px, -20px);
+			
+		}
+		
+		50%{
+			
+			opacity:1;
+			
+		}
+		
+		100%{
+			
+			opacity:0;
+			transform:rotate(45deg) translate(20px, 20px);
+			
+		}
+		
+	}
+			
+	#scrollArrowBtn{
+		
+		background-color:transparent;
+		width:200px;
+		height:90px;
+		padding:15px;
+		position:absolute;
+		bottom:-50px;
+		left:50%;
+		border-radius:15px;
+		border:none;
+		
+	}
+	
+	#scrollArrowBtn:focus{
+		
+		outline:none;
+		
+	}
+		
+	#scrollBgBox{
+		
+		background-color:#343A40;
+		height:100px;
+		width:100%;
+		position:absolute;
+		bottom:0px;
+		text-align:center !important;
+		opacity:0;
+		
+	}
+
+	
+	
+	.verticalBorder{
+	
+		border-left:1px solid white;
+		height:600px;
+		position:absolute;
+		left:50%;
+	
+	}	
+
+	.separatingBorder{
+		
+		border-color:#d3d3d3 !important;
+		
+		
+	}	
+	
+	
+	
+	
+
+
+
+</style>

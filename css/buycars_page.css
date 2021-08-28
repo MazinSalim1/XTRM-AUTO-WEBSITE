@@ -1,0 +1,260 @@
+body {
+	font-family:'Oxygen', sans-serif;
+	repeat:no-repeat;
+	background-color:lightgrey;	
+	font-size:17px;
+	background-image:url("../images/CarComparison/2.jpg");
+}
+			
+.bold {		
+	font-weight:bold;			
+}
+			
+/***********NAV BAR**********************/			
+
+#goTopBtn{
+	background-color:white !important;
+}
+
+
+#search{
+	border-radius:30px;
+	padding:12px 50px 12px 15px; 
+	border:0px solid black; 
+	margin-bottom:30px; 
+	position:relative;
+	left:18px; 
+	width:530px;
+	font-size:20px !important;
+}
+#search:hover,#search:focus{
+	box-shadow:2px 2px 4px grey;
+	transition:0.3s;
+}
+#search:focus{
+	outline:none;
+}
+
+#searchIcon{
+	position:relative; 
+	right:20px; 
+	color:#757575;
+}
+
+.sellBtn{
+	margin-left:20px;
+	width:125px !important;
+	background-color:white !important;
+}
+
+.button{	
+	border:2px outset black;
+	border-radius:17px;
+	padding:10px;	
+	font-weight:bold;	
+}
+
+
+.cardButton{
+	position:absolute;
+	bottom:20px;
+	right:30px;
+}
+
+#sgnInBtn{
+	
+	margin-top:-2px;
+	width:110px;
+}
+
+.dropdown-item{
+	
+	font-family:'Montserrat', sans-serif;
+	
+}
+
+#navbarSupportedContent{
+	position:relative;
+	padding-left:230px !important;
+	text-align:center;
+	font-weight:bold;
+}
+
+.nav-link{
+	color:black;
+	font-family:'Montserrat', sans-serif;
+	font-size:20px !important;	
+}
+
+.nav-link:hover{
+	color:black;	
+}
+
+
+.nav-item{
+	margin-bottom:5px;
+	padding-right:50px;	
+}
+
+.borderHover:hover{	
+	border-bottom:3px solid black;
+	transition:0.5s;
+}
+
+
+/***********MAIN CONTENT******************/
+#main-content h1{
+	position: ;
+	margin: 100px 10px 25px 42px;
+	font-family:'Oxygen', sans-serif;
+	font-size: 3.5em;
+}  
+
+.card-columns {
+	margin: 0px 20px 20px 20px;
+}
+
+.card {
+	color: #000;
+	border-radius: .75rem;
+}
+
+.card:hover {
+	text-decoration: none;
+	color: #000;
+	box-shadow:  2px 3px 5px 3px #cccccc;
+}
+
+a.bg-light:hover, a.bg-light:active, a.bg-light:focus {
+	background-color: #f8f9fa!important;
+}
+
+.card img {
+    width: 100%;
+	height:300px;
+    background-repeat: no-repeat;
+   	border-radius: .75em;
+}   
+
+.card button{
+	float:right;
+}
+/************ FAV BUTTON ******************/
+.card-img-overlay span {
+	position: absolute;
+	top: .625rem;
+    right: .625rem;
+} 
+
+span .fa-stack-2x {
+	color: #f8f9fa;
+}
+span .fa-stack-2x:hover {
+	text-shadow: 2px 2px 8px #FF0000;
+}
+
+span .fa-stack-1x {
+	font-size: 20px;
+	color: #C5C6C8;
+	
+}
+span .fa-stack-1x:hover {
+	font-size: 20px;
+	color: #CB3D3D;
+}
+
+#modalCloseBtn:focus{
+	outline:none;
+}
+
+/********* CARD BODY ***************/
+.card-body h3 {
+	margin-bottom: 0;
+}
+.card-body h6 span {
+	margin-left: 5px;
+}
+.card-body .discount {
+	color: green;
+	font-size: 1.1em;
+	padding-top: 5px;
+}
+
+.card-text i {
+	margin-right: 10px;
+	font-size: 1.2em; 
+}
+
+/********** MODAL ***************/
+.modal-content {
+	width: 400px;
+	height: 510px;
+	background: url(../images/buycars-page/modal-background.jpg) no-repeat;
+}
+
+.modal-header {
+	border: 0;
+	padding: 12px 12px 5px 12px;
+}
+h3.modal-title {
+	margin-left: auto;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family:'Montserrat', sans-serif;
+	font-style: ;
+	font-size: ;
+}
+
+.modal-body {
+	font-size: 1.2em;
+	padding-top: 5px;
+
+}
+
+.modal-body a.btn.btn-outline-dark{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	border-radius: 16px;
+	width: 50%;
+}
+
+.modal-body div#login a{
+	color: 	#808080;
+	font-size: .9em;
+}
+.modal-body div#login a:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+#buyCarContainer{
+	background-color:lightgrey;
+	text-align:center !important;
+	border-radius:13px;
+	height:301px;
+	width:535px;
+	position:fixed;
+	bottom:270px;
+	left:437px;
+	opacity:0.9;
+	display:none;
+}
+#buyCarContainer p{
+	margin-top:20%;
+	font-size:30px;
+}
+
+#buyCarContainer button{
+	background-color:lightgrey;
+	border-radius:30px;
+	margin-top:10px;
+	width:190px !important;
+	
+}
+#myModal button:hover{
+	border:1px solid white;
+	background-color:dodgerblue;
+	color:white;
+	box-shadow:2px 2px 4px grey;
+	transition:0.4s;
+}

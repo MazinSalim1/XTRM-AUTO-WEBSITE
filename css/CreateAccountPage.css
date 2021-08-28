@@ -1,0 +1,159 @@
+<style>
+
+	body{
+		
+		font-family:'Montserrat', sans-serif;
+		font-size:13px;
+		margin-bottom:0px;
+		font-weight:strong;
+		
+	}
+	
+	.bold{
+		
+		font-family:'Montserrat', sans-serif;
+		font-weight:bold;
+		
+	}
+	
+	
+	#jumbotron_1{
+		
+		background-image:url("../images/CreateAccountPage/Raptor.jpg");
+		background-size:cover;
+		height:730px;
+		margin-bottom:0px;
+		text-align:center;
+		border-radius:0px;	
+		
+	}
+	
+	#formContainer{
+		
+		background-color:lightgrey;
+		height:auto;
+		width:500px;
+		border-radius:10px;
+		margin-top:50px;
+		margin-right:40px;
+		float:right;
+		padding:15px;
+		opacity:0.9;
+	}
+	
+	label{
+		
+		color:black;
+		font-family:'Montserrat', sans-serif;
+		font-size:15px;
+		float:left;
+		margin-top:20px;
+		
+	}
+	
+	.input{
+	
+		height:40px;
+		padding:20px 10px;
+		border-radius:10px;
+		border-color:black;
+		background-color:white;
+		float:left;
+		
+	}
+	
+	.button{
+		
+		width-min:100px;
+		width:auto;
+		border:2px outset black;
+		border-radius:17px;
+		padding:10px 7px ;
+		background-color:transparent;
+		transition:0.4s;
+
+	}
+	
+	.button:hover{
+		
+		border-color:lightgrey;
+		transition:0.7s;
+		font-size:17px;		
+		box-shadow:2px 5px 10px black;
+		background-image:linear-gradient(to bottom right, grey, silver);
+	
+	}
+	
+	.button:active{
+		
+		box-shadow:0 2px 5px grey;
+		transform: translateY(4px);
+		transition:0.2s;
+		
+	}
+	
+	.separatingBorder{
+		
+		margin-top:30px;
+		border-bottom:1px solid black;
+		width:400px;
+		margin-left:35px;
+		
+	}
+	
+	#sgnUpBtn{
+		
+		margin-top:30px;
+		background-color:lightgrey;
+		border:2px outset black;
+		width:300px;
+		
+	}
+	
+	#sgnUpBtn:hover{
+		
+		background-color:white;
+		
+	}
+	
+	.arrowMarkImg{
+		
+		margin-left:5px;
+		height:20px;
+		width:20px;
+		
+	}
+	
+	#goTopBtn{
+	
+		position:fixed;
+		bottom:25px;
+		background-color:white;
+		background-image:linear-gradient(to bottom right, grey, silver);
+		width:100px;
+		left:25px;
+		
+	}
+	
+	#goTopBtn:hover{
+		
+		border-color:silver;
+		
+	}
+	
+	.arrowMarkImgRotate{
+	
+		transform: rotate(90deg);
+	
+	}
+	
+	#username{
+		
+	}
+	
+	.panel-footer{
+		position:relative important!;
+		bottom:0px;
+	}
+	
+</style>

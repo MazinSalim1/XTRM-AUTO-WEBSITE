@@ -1,0 +1,574 @@
+
+@font-face {
+    font-family: 'webfontregular';
+    src: url('fonts/PunchLimit/punchlimit-webfont.woff2') format('woff2'),
+         url('fonts/PunchLimit/punchlimit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+  background: rgb(0,0,0);
+  color: rgb(255,255,255);
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/Limo/tesla.jpg");
+  background-size:cover;
+  color: #333;
+}
+
+.limoBtn{
+	text-align:center;
+	border:3ps solid white;
+	padding:10px;
+	background-color:transparent;
+}
+
+.limoBtn:hover{
+	background-color:blue;
+	color:white;
+	transition:0.4s;
+}
+
+#modalCloseBtn:focus{
+	outline:none;
+}
+
+<!--*******************************************NAVBAR**************************************************-->
+
+
+
+#logoLink{
+  margin-left:-12px;
+  margin-right:12px;
+  margin-top:1px;
+}
+
+.navbar{
+    margin-top:-20px;
+    background-color:transparent;
+    position:absolute;
+}
+
+#navbarSupportedContent{
+    position:relative;
+    padding-left:300px;
+    text-align:center;
+	margin-top:5px;
+}
+			
+			.nav-link{
+				
+				color:black;
+				font-family:'Montserrat', sans-serif;
+				font-size:21px;
+				
+			}
+			
+			.nav-link:hover{
+				
+				color:black;
+				
+			}
+			
+			.nav-item{
+				
+				margin-bottom:5px;
+				padding-right:50px;
+				
+			}
+			
+			.borderHover:hover{
+				
+				border-bottom:3px solid black;
+				transition:0.5s;
+				
+			}.dropdown-menu{
+			
+				background-color:#F7F7F7;
+				border:1px solid #d3d3d3;
+				display:none;
+				
+			}
+			
+			.dropdown-item:hover{
+				
+				background-color:#d3d3d3;
+				
+			}
+			
+			.dropdown-divider{
+				
+				border-bottom:1px solid lightgrey;
+				
+			}
+			
+			#rentalDropdownMenu{
+				
+				display:none;
+				
+			}
+			
+			#logoImg{
+				
+				margin-left:-10px;
+				width: 150px;
+				height: 100px;
+				padding-bottom:4px;
+
+			}
+            
+            #sgnInBtn{
+                
+                width:100px;
+                border:3px solid white;
+				border-radius:27px;
+				padding:10px 7px ;
+				background-color:transparent;
+				transition:0.4s;
+                color:black;
+				font-size:20px;
+                
+            }
+#sgnInBtn:hover{
+  background-color:#0069D9;
+  border:none;
+  color:white;
+  border-color:lightgrey;
+  transition:0.4s;
+  font-size:17px;
+  box-shadow:2px 5px 10px grey;
+}
+
+#sgnInBtn:active{
+  box-shadow:0 2px 5px grey;
+  transform: translateY(6px);
+  transition:0.2s;
+}
+
+.button:focus{
+  outline:none;
+}
+
+#goTopBtn{
+  border:2px solid white;
+  border-radius:30px;
+  padding:8px 5px;
+  position:fixed;
+  bottom:15px;
+  background-color:white;
+  width:125px !important;
+  margin-left:25px;
+}
+    
+    .arrowMarkImg{
+		
+		margin-left:5px;
+		height:20px;
+		width:20px;
+		
+	}
+    
+#carvideo{
+    
+    height:700px;
+    width:100%;
+}
+
+.soundBtn{
+    position:relative;
+    top:-66px;
+    margin-left:34%;
+    width:200px;
+    background-color:white;
+    border:1px solid white;
+    border-radius:30px;
+    padding:15px 10px 15px 10px;
+}
+
+#unmuteBtn{
+    position:relative;
+    top:-122px;
+    margin-left:54%;
+}
+
+.soundBtn:hover{
+    background-color:blue;
+    color:white;
+    transition:0.4s;
+    border:none;
+    font-size:17px;
+}
+
+.soundBtn:focus{
+    outline:none;
+}
+
+    
+#hero h1{  
+  text-align:center;
+}
+
+.navbar-light .navbar-brand {
+  background: url("logo.svg") center / 80% no-repeat;
+  width: 150px;
+  height: 40px;
+}
+
+#navcol-1 {
+  font-size: 13px;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+}
+
+.h1, h1 {
+  margin-left: 0px;
+  padding-right: -31px;
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  border-style: none;
+  text-align: left;
+}
+
+#title {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+#hero-bottom {
+  color: #fff;
+  border-radius:2px;
+  margin-bottom:50px;
+}
+
+#hero-bottom h5{
+    
+    text-align:center;
+    padding-bottom:15px;
+    padding-top:10px;
+    
+}
+
+#hero {
+}
+
+.p-bot {
+  margin-bottom: 15;
+  font-size: 13px;
+}
+
+.p-top {
+  font-size: 26px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.reserve-button {
+}
+
+#hero-bottom .container {
+  max-width: 700px;
+}
+
+.btn.btn-link.btn-block.arrow-button {
+  color: rgb(255,255,255);
+}
+
+.col.with-borders {
+  border: 1px solid rgba(255,255,255,0.24);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+#video-and-stats {
+  text-align: center;
+}
+
+#video-and-stats iframe {
+  width: 900px;
+  height: 500px;
+}
+
+#limo {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/Limo/benzLimoSide.jpg") center / contain no-repeat;
+}
+
+#limo .container {
+  margin-top: 75px;
+  border-style: none;
+}
+
+.lease-button {
+  background: rgba(0,98,204,0);
+  border: 3px solid #fff;
+  border-radius: 30px;
+  /padding: 5px;/
+  /font-size: 12px;/
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+.p-top1 {
+  font-size: 26px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+.col.with-borders2 {
+  border: 1px solid rgba(255,255,255,0.2);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.limo-bottom2 {
+}
+
+.container.container2 {
+  margin-top: -170px;
+}
+
+#ser {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#tablesservices.container {
+}
+
+#ser .cell-left {
+  text-align: left;
+}
+
+#ser .cell-right {
+  text-align: right;
+}
+
+#ser .cell-left1 {
+  text-align: left;
+}
+
+#ser .cell-right1 {
+  text-align: right;
+}
+
+.col-3 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.333333;
+}
+
+.card-material-image{
+	
+	width:100% ;
+	height:250px;
+	
+}
+
+.card-material-1 {
+}
+
+.card-material-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card-material-1 {
+  box-shadow: 0px 0px 10px 0px gainsboro;
+  border-radius: 3px;
+}
+
+.card-material-box {
+  padding: 2em;
+  text-align: center;
+}
+
+#card-material-box .rent-button-4 {
+}
+
+.rent-button-4 {
+  background: rgba(0,98,204,0);
+  border: 3px solid white;
+  border-radius: 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+.card-material-image {
+}
+
+.limo-bottom4 {
+}
+
+.h-money {
+  margin-top: 61px;
+  text-align: center;
+}
+
+.rent-now {
+  background: rgba(0,123,255,0);
+  border: 3px solid white;
+  border-radius: 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  margin-top: 36px;
+}
+
+.h2, h2 {
+  margin-top: 112px;
+  height: 96px;
+  font-size: 40px;
+}
+
+.carousel{
+    
+    width:500px;
+    height:500px;
+    
+}
+
+.container{
+
+  margin-bottom:100px;
+  background-image: linear-gradient(rgba(1,1,1,0.5), rgba(1,1,1,0.5));
+
+}
+
+/********** MODAL ***************/
+.modal-content {
+  width: 400px;
+  height: 510px;
+  background: url(../images/Limo/modal.jpg) no-repeat;
+  opacity: .9.5;
+}
+
+.modal-header {
+  border: 0;
+  padding: 8px 12px 0 12px;
+}
+
+h3.modal-title {
+  margin-left: auto;
+  font-family: 'webfontregular';
+  font-size: 62px;
+  text-shadow: 3px 3px 2px black;
+}
+
+.modal-body {
+  font-size: 1.2em;
+  padding-top: 0;
+  text-shadow: 2px 2px 4px black;
+}
+
+.modal-body a.btn{
+  margin-top: 12px;
+  margin-bottom: 200px;
+  padding-left: 0;
+  padding-right: 0;
+  color:white;
+  border: 2px solid white;
+  border-radius: 16px;
+  width: 50%;
+  transition: .4s;
+  text-shadow: none;
+  box-shadow: 2px 2px 4px black;
+}
+.modal-body a.btn:hover, .modal-body a.btn:active,.modal-body a.btn:focus {
+  background-color: white;
+  color: black;
+
+}
+
+.modal-body div#login a{
+  
+  color:  white;
+  font-size: .9em;
+}
+.modal-body div#login a:hover{
+  text-decoration: ;
+}
+
+#modalCloseBtn {
+  color: white;
+}
+
+.panel-footer {
+
+		padding-top: ;
+		padding-bottom:15px;
+		background-color:#343A40;
+		border-top:0;
+		color:#DEFFFF;
+
+	}
+
+	#hours, #address {
+		
+		padding-left: 30px;
+		padding-right: 30px;
+
+	}
+
+	#address p {
+	
+		color: lightgrey;	
+		font-size: 13px;
+		
+	}
+
+	#testimonials {
+
+		font-style: italic;	
+		padding-left: 30px;
+		padding-right: 30px;
+	
+	}
+	
+	.sclMedia a{
+	
+		color:#DEFFFF;
+		
+	}
+	
+	.sclMedia a:hover{
+		
+		text-decoration:none;
+		
+	}
+	
+	#instaIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+
+	#twitterIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+		
+	#facebookIcon{
+		
+		width:20px;
+		height:20px;
+		position:relative;
+		top:-2px;
+		
+	}
+

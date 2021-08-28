@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'webfontregular';
+    src: url('fonts/PunchLimit/punchlimit-webfont.woff2') format('woff2'),
+         url('fonts/PunchLimit/punchlimit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dodger_condensedcondensed';
+    src: url('fonts/dodger/dodgv2c-webfont.woff2') format('woff2'),
+         url('fonts/dodger/dodgv2c-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'faster_oneregular';
+    src: url('fonts/speedfont/fasterone-regular-webfont.woff2') format('woff2'),
+         url('fonts/speedfont/fasterone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'starjedi_special_editionRg';
+    src: url('fonts/jedi/stjedise-webfont.woff2') format('woff2'),
+         url('fonts/jedi/stjedise-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'shining_heraldregular';
+    src: url('fonts/shiningherald/shiningherald-webfont.woff2') format('woff2'),
+         url('fonts/shiningherald/shiningherald-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#sgnInBtn{
+	width:125px !important;
+}
+
+/***********MAIN CONTENT*************/
+body {
+	background-color: white;
+}
+#jumbotron1 {
+	background-color: none ;
+	height: 535px;
+	position: relative;
+}
+
+.jumbotron {
+	background: url('../images/mods/background.jpeg') ;
+	width:100%; 
+	min-height: 500px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+
+
+.heading1 {
+	font-family: 'shining_heraldregular';
+	color: white;
+	text-shadow: 5px 5px 5px black;
+	text-align: center;
+	position: absolute;
+	left: 200px;
+	top: 100px;
+	font-size: 120px;
+	opacity: .95;
+}
+
+.heading2 {
+	font-family: 'shining_heraldregular';
+	color: white;
+	text-shadow: 5px 5px 5px black;
+	text-align: center;
+	position: absolute;
+	left: 400px;
+	top: 220px;
+	font-size: 120px;
+	opacity: .95;
+}
+
+.container1 {
+	position: absolute;
+	height: 525px;
+	width: 1105px;
+	top: 475px;
+	left: 200px;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-shadow:0px 0px 10px 0px #000;
+}
+
+.card-columns {
+	width: 100%;
+	padding: 10px;
+	-webkit-column-gap: 0;
+}
+
+.card-columns .card {
+	width: 240px;
+	height: 220px;
+	margin: 15px;
+	border: none;
+}
+
+.nav-tabs {
+	border-bottom: none;
+}
+
+.nav-tabs .nav-link.nav-link2 {
+	border-radius: 0;
+	border: none;
+	transition: .6s;
+}
+
+.nav-tabs .nav-link.nav-link2:active, .nav-tabs .nav-item.show .nav-link.nav-link2 {
+	border: none;
+	opacity: .9;
+}
+.nav-tabs .nav-link.nav-link2:hover {
+	border: none;
+	opacity: .9;
+}
+
+
+.nav-link2 {
+	width: 240px;
+	height: 220px;
+	padding: 0;	
+}
+
+.sub-headings {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: 'starjedi_special_editionRg';
+	color: white;
+	font-size: 2.5em;
+	text-align: center;
+	width: 100%;
+	text-shadow: 5px 5px 5px black;
+}
+
+.tab-content {
+	position: absolute;
+	color: red;
+	font-size: 3em;
+	font-weight: bold;
+	background: url('../images/mods/background_2.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	height:100%;
+	width:100%;
+	color:white !important;
+}
+
+.container2 {
+	width: 1520px;
+	height: 550px;
+	padding: 0;
+	left:-200px;
+
+}
+
+.tab-pane {
+	width: 100%;
+	height: 350px;
+}
+
+/****************CAROUSEL**********************/
+.carousel {
+	height: 350px;
+	margin-top: 80px;
+	margin-right: 75px;
+	margin-left: 75px;
+}
+
+.carousel-inner, .carousel-item {
+	width: 100%;
+	height: 100%;
+}
+
+a.carousel-control-next, a.carousel-control-prev {
+	width: 48px;
+	height: 48px;
+	top: 150px;
+	opacity: .7;
+}
+
+i.far.fa-arrow-alt-circle-right, i.far.fa-arrow-alt-circle-left {
+	color: #0B5ED7;
+	text-shadow: 1px 1px 2px black;
+}
+
+.carousel-item img {
+	position: absolute;
+	left: 150px;
+}
+
+.carousel-item h2 {
+	font-family: 'starjedi_special_editionRg';
+	font-size: 1.4em;
+	color: #0B5ED7;
+	text-shadow: 5px 5px 5px black;
+	margin:0;
+	position: absolute;
+	left: 250px;
+	bottom: 5px;
+	line-height: 65px;
+}
+
+.carousel-text{
+	position: absolute;
+	top: 0;
+	right: 50px;
+	width: 730px;
+}
+
+.carousel-text h3{
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #0B5ED7;
+	font-size: .7em;
+}
+
+.carousel-text div {
+	color: black;
+	font-size: .5em;
+	font-weight: normal;
+	line-height: 27px;
+}
+.carousel-text .shop {
+	color: black;
+	font-size: .6em;
+	font-weight: normal;
+	position:absolute;
+	top: 150px;
+	left: 20px;
+	line-height: 35px;
+	width: 360px;
+	margin-top:15px;
+}
+
+
+.carousel-text a {
+	color: white;
+	text-transform: uppercase;
+	padding: 8px 20px 8px 20px;
+	position:absolute;
+	top: 265px;
+	left: 110px;
+	font-size: 20px;
+	border-radius: 8px;
+	text-shadow: 1px 1px 1px black;
+	font-weight:normal;
+	background-color: #0B5ED7;
+	transition: .3s ease;
+}
+
+.carousel-text a:hover {
+	text-decoration: none;
+	color: #0B5ED7;
+	background-color: white;
+}
+
+.carousel-text iframe {
+	position:absolute;
+	top:150px;
+	right:22px;
+}
+
+
+/****************FOOTER********************/
+
+.panel-footer {
+		width: 100%;
+		position: absolute;
+		bottom: -810px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		background-color: rgb(0,0,0,0.7);
+		border-top:0;
+		color:#DEFFFF;
+		font-size: 1.2em;
+
+	}
+.sclMedia a{
+	
+		color:#DEFFFF;
+		
+	}
+	
+	.sclMedia a:hover{
+		
+		text-decoration:none;
+		
+	}
+	
+	#instaIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+
+	#twitterIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+		
+	#facebookIcon{
+		
+		width:20px;
+		height:20px;
+		position:relative;
+		top:-2px;
+		
+	}
+
+
+/***********MODAL*********************/				
+.modal-content {
+	height: 400px;
+	width: 800px;
+	background: background-color: #b8c6db;
+	background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);;
+
+}
+
+.modal-header {
+	padding: 10px 20px 0 30px;
+	background: url('../images/XTRM LOGO.png') no-repeat;
+
+}
+.modal-title {
+	font-family: 'Teko', sans-serif;
+	font-size: 2.5em;
+	margin-bottom: 0px ;
+}
+.modal-body {
+	position: relative;
+	padding-left: 30px;
+}
+
+.modal-body img {
+	position: absolute;
+	left: 0;
+	bottom: -95px;
+	filter: grayscale(0);
+}
+
+.modal-body span {
+	margin-bottom: 20px;
+}
+
+.modal-body a {
+	color:#929599;
+	margin-top: 5px;
+
+}
+.modal-body a:hover {
+	text-decoration: none;
+	color: black;
+}

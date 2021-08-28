@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <projectName>Scorpio2</projectName>
+  <projectConfig>D:\ProjectWork-Sem3.github.io\images\rent1\Scorpio2\Scorpio2.xml</projectConfig>
+  <interface>
+    <clipboxPreview>True</clipboxPreview>
+    <clipboxFitImages>True</clipboxFitImages>
+    <showCenterGuide>False</showCenterGuide>
+    <showGridGuide>False</showGridGuide>
+    <showImageEdges>True</showImageEdges>
+    <showToolbarGuide>False</showToolbarGuide>
+    <lockWatermarks>False</lockWatermarks>
+    <spotWheelSpeedDown>False</spotWheelSpeedDown>
+  </interface>
+  <publishing>
+    <publishPath>
+    </publishPath>
+    <viewName>
+    </viewName>
+    <skinType>0</skinType>
+    <viewerWidth>272</viewerWidth>
+    <viewerHeight>153</viewerHeight>
+    <imageScale>1</imageScale>
+    <imageFormat>1</imageFormat>
+    <jpgQuality>94</jpgQuality>
+    <jpgQualityHighres>94</jpgQualityHighres>
+    <cropMarginScale>4</cropMarginScale>
+    <cropMarginTop>0</cropMarginTop>
+    <cropMarginLeft>0</cropMarginLeft>
+    <cropMarginBottom>0</cropMarginBottom>
+    <cropMarginRight>0</cropMarginRight>
+    <cropFillColor>-1</cropFillColor>
+    <viewerBackColor>-1</viewerBackColor>
+    <hideWatermarks>False</hideWatermarks>
+    <fittedImages>True</fittedImages>
+    <skipImagePublishing>False</skipImagePublishing>
+    <launchLocalBrowser>True</launchLocalBrowser>
+    <launchRemotelBrowser>True</launchRemotelBrowser>
+    <testBrowser>
+    </testBrowser>
+    <publishTemplate>
+    </publishTemplate>
+    <loopGif>True</loopGif>
+    <publishGifPath>
+    </publishGifPath>
+    <gifLoopPeriod>0</gifLoopPeriod>
+    <gifQuality>16</gifQuality>
+    <launchGifInBrowser>True</launchGifInBrowser>
+    <useGAEventTracking>False</useGAEventTracking>
+    <addGATrackingScript>False</addGATrackingScript>
+    <GATrackingAlias>
+    </GATrackingAlias>
+    <GATrackingScriptId>
+    </GATrackingScriptId>
+    <createPixriotMeta>True</createPixriotMeta>
+  </publishing>
+  <canvas />
+  <effects />
+  <connections>
+    <activeConnection>
+    </activeConnection>
+  </connections>
+</settings>

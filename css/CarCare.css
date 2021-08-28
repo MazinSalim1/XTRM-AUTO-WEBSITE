@@ -1,0 +1,513 @@
+#body{
+	
+	background-image:linear-gradient(to bottom right, white, lightgrey) !important;
+	background-repeat:no-repeat;
+	font-family:'Georgia', sans-serif; 
+}
+
+
+			#logoLink{
+				
+				margin-left:-12px;
+				margin-right:12px;
+				margin-top:1px;
+				
+			}
+			
+			#navBar{
+				
+				margin-top:0px;
+				height:70px;
+				background-color:white;
+				position:relative;
+				margin-bottom:-60px;
+			}
+			
+			#navbarSupportedContent{
+				
+				position:relative;
+				padding-left:250px;
+				text-align:center;		
+				margin-bottom:-10px;
+			}
+ 				
+			#navBar .nav-link{
+				
+				color:black;
+				font-family:'Montserrat', sans-serif;
+				font-size:18px;
+				
+			}
+			
+			#navBar .nav-link:hover{
+				
+				color:black;
+				
+			}
+			
+			#navBar .nav-item{
+				
+				margin-bottom:5px;
+				padding-right:50px;
+				
+			}
+			
+			.borderHover:hover{
+				
+				border-bottom:3px solid black;
+				transition:0.5s;
+				
+			}
+			
+			.dropdown-menu{
+			
+				background-color:#F7F7F7;
+				border:1px solid #d3d3d3;
+				display:none;
+				
+			}
+			
+			.dropdown-item:hover{
+				
+				background-color:#d3d3d3;
+				
+			}
+			
+			.dropdown-divider{
+				
+				border-bottom:1px solid lightgrey;
+				
+			}
+			
+			#rentalDropdownMenu{
+				
+				display:none;
+				
+			}
+			
+			#logoImg{
+				
+				margin-left:-10px;
+				width: 150px;
+				height: 100px;
+				padding-bottom:4px;
+
+			}
+			
+			.button{
+				
+				width:120px;
+				border:2px outset black;
+				border-radius:30px;
+				padding:10px 7px ;
+				background-color:transparent;
+				transition:0.4s;
+				
+			}
+			
+			.button:hover{
+				
+				background-color:dodgerblue !important;
+				color:white;
+				font-size:13px;
+				border-color:lightgrey;
+				transition:0.4s;
+				box-shadow:2px 5px 5px grey;
+				
+			}
+			
+			.button:active{
+				
+				box-shadow:0 2px 5px grey;
+				transform: translateY(4px);
+				transition:0.2s;
+				
+			}
+			
+			.button:focus{
+				
+				outline:none;
+				
+			}
+			
+			.separatingBorder{
+		
+				margin-top:30px;
+				border-bottom:1px solid black;
+		
+			}
+			
+	.panel-footer {
+
+		padding-top: ;
+		padding-bottom:15px;
+		background-color:#343A40;
+		border-top:0;
+		color:#DEFFFF;
+
+	}
+
+	#hours, #address {
+		
+		padding-left: 30px;
+		padding-right: 30px;
+
+	}
+
+	#address p {
+	
+		color: lightgrey;	
+		font-size: 13px;
+		
+	}
+
+	#testimonials {
+
+		font-style: italic;	
+		padding-left: 30px;
+		padding-right: 30px;
+	
+	}
+	
+	.sclMedia a{
+	
+		color:#DEFFFF;
+		
+	}
+	
+	.sclMedia a:hover{
+		
+		text-decoration:none;
+		
+	}
+	
+	#instaIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+
+	#twitterIcon{
+		
+		width:30px;
+		height:30px;
+		position:relative;
+		top:-2px;
+		
+	}
+		
+	#facebookIcon{
+		
+		width:20px;
+		height:20px;
+		position:relative;
+		top:-2px;
+		
+	}
+	
+	#goTopBtn{
+		
+		position:fixed;
+		bottom:15px;
+		background-color:white;
+		width:125px !important;
+		margin-left:25px;
+		
+	}
+	
+	#goTopBtn:hover{
+		
+		background-image:linear-gradient(to bottom right, grey, lightgrey);
+		
+	}
+	
+	.arrowMarkImg{
+		
+		margin-left:5px;
+		height:20px;
+		width:20px;
+		
+	}
+	
+	button:focus{
+		
+		outline:none;
+		
+	}
+	
+
+.container {
+  position: relative;
+  font-family: 'Georgia', sans-serif;
+  padding:15px;
+  background-color: rgba(255,255,255,0.8) !important;
+  color:black ;
+  font-size:18px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#textJumbotron{
+	padding-top:130px;
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("../images/CarCare/Servicing.jpeg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	height:1400px;
+	width:100%;
+	color:white !important;
+}
+
+#textJumbotron h1{
+	text-decoration:underline;
+	text-align:center;
+	margin-left:600px;
+	margin-right:600px;
+	border-radius:10px;
+	color:white;
+	padding-bottom:10px;
+	padding-top:5px;
+	background-color:rgba(30, 144, 255, 0.7) !important;
+}
+
+#textContainer{
+margin-top:50px;
+position:relative;
+height:auto;
+width:100%;
+color:white;
+border-radius:10px;
+background-color:rgba(30, 144, 255, 0.7) !important;
+text-align:left;
+margin-bottom:150px;
+}
+
+#textContainer h3{
+
+	text-align:center !important;
+	margin-bottom:20px;
+	text-decoration:underline;
+}
+
+#CoronaContainer{
+
+	margin-top:50px;
+	position: relative;
+	bottom:30px;
+	width: 100%;
+	color: white; 
+	background-color:rgba(30, 144, 255, 0.7) !important;
+	border-radius:10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom:100px;
+}
+
+#CoronaContainer p{
+	text-align: left;
+}
+
+#CoronaContainer h3{
+	text-align: center;
+	margin-bottom:20px;
+	text-decoration:underline;
+	border-radius:5px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+#service{
+	margin-bottom: :50px;
+	position: relative;
+	bottom:30px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	border-radius:10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom:100px;
+}	
+
+.accordion{
+	width:1200px;
+	margin-left:150px;
+	margin-right:150px;
+	margin-bottom:50px;
+	background-color:transparent;
+	border-radius:10px;
+}
+
+.accordion-button[aria-expanded='true']{
+
+}
+
+.accordion button[aria-expanded='false']{
+	background-color:dodgerblue;
+  	color:white;
+}
+
+.accordion-button:focus{
+	outline:none !important;
+	box-shadow:none !important;
+}
+
+.accordion-header{
+	background-color:white;
+}
+
+.accordion-body{
+	background-color:white;
+}
+
+#CoronaContainer li{
+	padding-left:15px;
+	
+}
+
+#mainContainer{
+	position:relative;
+	width:1000px;
+	margin-right:50px;
+	padding-top:0px;
+	background-color:transparent !important;
+}
+
+#covidCare_1{
+	display:none;
+	margin-top:30px;
+}
+#covidCare_2{
+	display:none;
+}
+#covidCare_3{
+	display:none;
+}
+#covidCare_4{
+	display:none;
+}
+#covidCare_5{
+	display:none;
+}
+#covidCare_6{
+	display:none;
+}
+
+
+
+.covidCareContainer{
+	height:200px !important;
+	padding:10px 15px;
+	border-radius:5px;
+	border:1px outset grey;
+	font-family:'Georgia';
+	background-color:white !important;
+	
+}
+
+#covidCareContainer{
+	height:1830px;
+	border-radius:5px;
+	background-color:#F5FEFD !important;
+}
+
+#covidCareContainer h2{
+	border-radius:5px;
+	width:200px !important;
+	background-color:rgba(30, 144, 255, 0.7) !important;
+	text-align:center;
+	color:blsck;
+}
+
+#covidCareContainer h3{
+	padding:10px 5px;
+	font-family:'Georgia', sans-serif;
+	font-size:38px !important;
+}
+
+#covidCareContainer h5{
+	
+	font-weight:normal !important;
+}
+
+#navBtn{
+	width:230px;
+	height:1200px;
+	background-color:transparent !important;
+	float:left;
+}
+
+#faq{
+	width:130px;
+	text-align:center;
+	border-radius:5px;
+	padding:10px 10px;
+	padding:10px 10px;
+}
+#logoutBtn{
+				color:black;
+				border:1px solid black;
+				padding:15px;
+				border-radius:25px;
+			}
+			
+			#logoutBtn:hover{
+				text-decoration:none;
+			}
+			
+			#logoutBtn:focus{
+				outline:none;
+			}
+			
+			#logoutBtn:focus{
+				box-shadow:0 2px 5px grey;
+				transform: translateY(4px);
+				transition:0.2s;
+			}
+			#profilebtn{
+    color:black;
+    border:1px solid black;
+    padding:15px;
+    border-radius:25px;
+    margin-right:2rem;
+}
+#profilebtn:hover{
+    text-decoration:none;
+    }
+#profilebtn:focus{
+    outline:none;
+}
+#profilebtn:focus{
+    box-shadow:0 2px 5px grey;
+    transform: translateY(4px);
+    transition:0.2s;
+}
+	
+
